@@ -5,11 +5,23 @@ Since the tutorial provided by xively didnt exactly work out of the box, here is
 <br>
 Here is the location of the Xively Tutorial, https://xively.com/dev/tutorials/pi/
 
+<ol>
+<li><b>Create Xively Account</b></li>
+You will need to go to https://xively.com/get_started/ and follow the links to create your account.
 
-1. Install Python Libraries
+<li><b>Git xively tutorial source code</b></li>
+<pre class="code-text-only" style="display: none;">
+<code>git clone https://github.com/mvartani76/RPi-Xively-Tutorial-Python</code></pre>
+
+<li><b>Navigate to newly created directory<b></li>
+The previous step will download the code to <b>./RPi-Xively-Tutorial-Python/</b>. Navigate to this directory.
+<pre class="code-text-only" style="display: none;">
+<code>cd RPi-Tutorial-Python</code></pre>
+
+<li><b>Install Xively Python Libraries</b></li>
 This version of code requires Python2.7 for xively to function correctly. It does not work with Python3.2 and I have not checked Python 3.3.
 
-There is a dependency on the external "requests" Python library that has to be installed first
+There is also a dependency on the external "requests" Python library that has to be installed first.
 
 <pre class="code-text-only" style="display: none;">
 <code><b># Xively Library Installation </b>
@@ -22,7 +34,20 @@ ln -s ../requests/requests
 echo "import xively" | python2.7</code>
 </pre>
 
-2. Run the python script
+<li><b>Update FEED_ID and API_KEY</b></li>
+Each device has unique information. The provided code uses the FEED_ID and API_KEY for my RPi using my Xively account.<br>
+
+Change the following lines of code in <b>xively_tutorial.py</b>
+<pre class="code-text-only" style="display: none;">
+<code>FEED_ID = "2090009607"
+API_KEY = "djUHb7PVHKYMlvxJn4gbAmtX2wC4SAniAniNHzm8QxexHyxW"</code></pre>
+to
+<pre class="code-text-only" style="display: none;">
+<code>FEED_ID = "YOUR FEED ID"
+API_KEY = "YOUR API KEY"</code></pre>
+
+<li><b>Run the python script</b></li>
 <pre class="code-text-only" style="display: none;">
 <code>sudo python2.7 xively_tutorial.py</code>
 </pre>
+</ol>
