@@ -37,7 +37,7 @@ echo "import xively" | python2.7</code>
 <li><b>Update FEED_ID and API_KEY</b></li>
 Each device has unique information. The provided code uses the FEED_ID and API_KEY for my RPi using my Xively account.<br>
 
-Change the following lines of code in <b>xively_tutorial.py</b>
+Change the following lines of code in <b>xively_tutorial.py</b>. You will need to navigate back to the <b>/RPi-Xively-Tutorial-Python/</b> directory.
 <pre class="code-text-only" style="display: none;">
 <code>FEED_ID = "2090009607"
 API_KEY = "djUHb7PVHKYMlvxJn4gbAmtX2wC4SAniAniNHzm8QxexHyxW"</code></pre>
@@ -48,6 +48,6 @@ API_KEY = "YOUR API KEY"</code></pre>
 
 <li><b>Run the python script</b></li>
 <pre class="code-text-only" style="display: none;">
-<code>sudo python2.7 xively_tutorial.py</code>
+<code>python2.7 xively_tutorial.py</code>
 </pre>
 </ol>
