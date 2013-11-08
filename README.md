@@ -22,6 +22,7 @@ The previous step will download the code to <b>./RPi-Xively-Tutorial-Python/</b>
 This version of code requires Python2.7 for xively to function correctly. It does not work with Python3.2 and I have not checked Python 3.3.
 
 There is also a dependency on the external "requests" Python library that has to be installed first.
+The following commands were taken from http://www.oeey.com/2013/09/data-logging-with-internet-of-things.html.
 
 <pre class="code-text-only" style="display: none;">
 <code><b># Xively Library Installation </b>
